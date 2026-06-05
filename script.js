@@ -38,7 +38,7 @@ window.addEventListener('scroll',()=>{
   let current='';
   sections.forEach(s=>{ if(window.scrollY>=s.offsetTop-120) current=s.id; });
   navLinks.forEach(a=>{ a.classList.remove('active'); if(a.getAttribute('href')==='#'+current) a.classList.add('active'); });
-  document.getElementById('navbar').style.padding=window.scrollY>60?'14px 60px':'20px 60px';
+  document.getElementById('navbar').style.padding=window.scrollY>60?'8px 60px':'12px 60px';
   // scroll up
   const btn=document.getElementById('scrollUp');
   if(window.scrollY>400) btn.classList.add('visible');

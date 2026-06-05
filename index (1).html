@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Anuwary Mwitike | Data Analyst & Graphics Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Cormorant+Garamond:wght@500;600;700&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body class=""> <!-- Starts without 'dark' class, so Light Mode is default -->
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-follow" id="cursorFollow"></div>
+
+<!-- Scroll Up -->
+<button id="scrollUp" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="logo">AM.<span>.</span></div>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#design-projects">Design</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-tag">
+    <button id="themeToggle" onclick="toggleTheme()" title="Toggle theme" aria-label="Toggle theme">
+      <i class="fa fa-moon" id="themeIcon" aria-hidden="true"></i> <!-- Default moon for switching TO dark -->
+    </button>
+    <span class="nav-tag-text">Available for Opportunities</span>
+  </div>
+  <div class="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <!-- LEFT -->
+  <div class="hero-left">
+    <h1 class="hero-name">
+      <span class="line1">ANUWARY</span>
+      <span class="line2">MWITIKE</span>
+    </h1>
+    <p class="hero-sub">
+      <strong>Data Analyst & Graphics Designer</strong>: crafting visuals and insights that make people stop scrolling, understand faster, and start feeling. Based in <strong>Dar es Salaam</strong>.
+    </p>
+    <div class="marquee-wrap">
+      <div class="marquee-inner">
+        ADOBE PHOTOSHOP <span>✦</span> ADOBE ILLUSTRATOR <span>✦</span> GRAPHIC DESIGN <span>✦</span> BRAND IDENTITY <span>✦</span> SOCIAL MEDIA GRAPHICS <span>✦</span> DATA SCIENCE <span>✦</span>
+        ADOBE PHOTOSHOP <span>✦</span> ADOBE ILLUSTRATOR <span>✦</span> GRAPHIC DESIGN <span>✦</span> BRAND IDENTITY <span>✦</span> SOCIAL MEDIA GRAPHICS <span>✦</span> DATA SCIENCE <span>✦</span>
+      </div>
+    </div>
+    <div class="hero-ctas">
+      <a href="#design-projects" class="btn btn-primary">▶ View Projects</a>
+      <a href="Anuwary Mwitike CV.pdf" class="btn btn-outline" target="_blank" download>↗ View CV</a>
+      <a href="#contact" class="btn btn-ghost">✉ Get In Touch</a>
+    </div>
+  </div>
+
+  <!-- RIGHT — Photo -->
+  <div class="hero-right">
+    <div class="hero-photo-frame">
+      <img src="Anuu Official.png" alt="Anuwary Mwitike" />
+      <div class="hero-photo-accent">
+        <span>Dar es Salaam</span>
+        <small>Tanzania 🇹🇿</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">01 — Who I Am</div>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <div class="about-photo-small">
+        <img src="Anuu Official.png" alt="Anuwary Mwitike" />
+      </div>
+    </div>
+    <div class="about-text">
+      <h2 class="about-title reveal">I Turn <em>Data & Ideas</em><br>Into Insightful Visuals.</h2>
+      <div class="typewriter-wrap reveal reveal-delay-1">
+        <div class="typewriter" id="typewriter">Data Analyst · Graphics Designer</div>
+      </div>
+      <p class="about-body reveal reveal-delay-1">
+        I'm Anuwary Mwitike — a passionate Data Analyst and Graphics Designer based in Dar es Salaam, Tanzania. I blend analytical thinking with creative design to produce work that doesn't just look good, but communicates powerfully.
+      </p>
+      <p class="about-body reveal reveal-delay-2">
+        Currently pursuing a Bachelor's Degree in Data Science at EASTC, I also bring strong skills in Adobe Illustrator and Photoshop — turning data, ideas, and brand messages into clear visuals for reporting, branding, social media graphics, event posters, and UI concepts.
+      </p>
+      <div class="about-copy reveal reveal-delay-1">
+        <div class="about-kicker">Future Data Analyst - Graphics Designer</div>
+        <p class="about-body">
+          I am Anuwary Mwitike, a third-year Data Science student at Eastern Africa Statistical Training Centre (EASTC). I love technology, programming, machine learning, and AI, and my goal is to grow into a strong Data Analyst by combining practical skills with real-world experience.
+        </p>
+        <p class="about-body">
+          Beyond data, I am also a Graphics Designer who turns ideas into clear, eye-catching images. I use design to shape concepts into visuals that communicate, inspire, and make people stop and pay attention.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-label reveal">02 — Toolkit</div>
+  <div class="skills-header">
+    <h2 class="section-title reveal">Skills &amp;<br>Technologies</h2>
+  </div>
+  <div class="skills-grid">
+    <!-- Row 1 -->
+    <div class="skill-card reveal">
+      <div class="skill-icon skill-icon-ps"><span class="tool-mark">Ps</span></div>
+      <div class="skill-name">Adobe Photoshop</div>
+      <div class="skill-desc">Photo compositing,social media graphics & event posters.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:65%"></div></div>
+        <span class="level-text">Intermediate</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon skill-icon-ai"><span class="tool-mark">Ai</span></div>
+      <div class="skill-name">Adobe Illustrator</div>
+      <div class="skill-desc">Vector graphics, logo design, brand identity, and print-ready layouts.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:40%"></div></div>
+        <span class="level-text">Beginner</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-icon skill-icon-duo"><i class="fa-brands fa-html5" style="color:#E34F26;"></i><i class="fa-brands fa-css3-alt" style="color:#1572B6;"></i></div>
+      <div class="skill-name">HTML &amp; CSS</div>
+      <div class="skill-desc">Semantic markup, responsive layouts, and modern CSS animations.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:70%"></div></div>
+        <span class="level-text">Intermediate</span>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="skill-card reveal">
+      <div class="skill-icon"><i class="fa-brands fa-python" style="color:#3776AB;"></i></div>
+      <div class="skill-name">Python</div>
+      <div class="skill-desc">Data analysis, automation, and statistical computing for data science.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:65%"></div></div>
+        <span class="level-text">Intermediate</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon skill-icon-pbi"><span class="tool-mark">PBI</span></div>
+      <div class="skill-name">Power BI</div>
+      <div class="skill-desc">Interactive dashboards and data visualization for decision-making.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:55%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-icon skill-icon-mysql"><span class="tool-mark">SQL</span></div>
+      <div class="skill-name">MySQL</div>
+      <div class="skill-desc">Database design, querying, and data management for web applications.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:40%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="skill-card reveal">
+      <div class="skill-icon skill-icon-qgis"><span class="tool-mark">Q</span></div>
+      <div class="skill-name">QGIS</div>
+      <div class="skill-desc">Geographic information systems for spatial data analysis and mapping.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:35%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon skill-icon-stata"><span class="tool-mark">St</span></div>
+      <div class="skill-name">Stata</div>
+      <div class="skill-desc">Statistical analysis and data management for research and economics.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:35%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-icon"><i class="fa-brands fa-r-project" style="color:#276DC3;"></i></div>
+      <div class="skill-name">R</div>
+      <div class="skill-desc">Statistical computing, data visualisation and research analysis.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:35%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <!-- Row 4 -->
+    <div class="skill-card reveal">
+      <div class="skill-icon skill-icon-orange"><span class="tool-mark">O</span></div>
+      <div class="skill-name">Orange</div>
+      <div class="skill-desc">Visual ML workflows and data mining for quick exploratory modelling.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:35%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-1">
+      <div class="skill-icon skill-icon-render"><span class="tool-mark">R</span></div>
+      <div class="skill-name">Render</div>
+      <div class="skill-desc">Cloud deployment platform for hosting web applications and APIs.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:55%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+    <div class="skill-card reveal reveal-delay-2">
+      <div class="skill-icon skill-icon-vercel"><span class="tool-mark">V</span></div>
+      <div class="skill-name">Vercel</div>
+      <div class="skill-desc">Instant frontend deployments with CI/CD pipeline for fast hosting.</div>
+      <div class="skill-level">
+        <div class="level-bar"><div class="level-fill" style="width:65%"></div></div>
+        <span class="level-text">Basic</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE & EDUCATION -->
+<section id="experience">
+  <div class="section-label reveal">03 — Background</div>
+  <h2 class="section-title reveal">Experience &amp;<br>Education</h2>
+  <p class="section-desc reveal">Where I have worked, studied, and grown my craft.</p>
+  <div class="exp-edu-grid">
+    <div class="reveal">
+      <div class="exp-col-title">Work Experience</div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-badge tl-badge-work">Field Attachment</span>
+          <div class="tl-org">Muhimbili University of Health and Allied Sciences</div>
+          <div class="tl-period">· Department of Epidemiology &amp; Biostatistics</div>
+          <div class="tl-desc">Supported research analytics with Stata, interpreted statistical outputs, and helped prepare key findings for the biostatistics team.</div>
+        </div>
+        <div class="tl-item reveal reveal-delay-1">
+          <div class="tl-dot"></div>
+          <span class="tl-badge tl-badge-work">Internship · Current</span>
+          <div class="tl-title">Football Data Collector Intern</div>
+          <div class="tl-org">Sokametrics</div>
+          <div class="tl-period">May 2026 — Present</div>
+          <div class="tl-desc">Collects NBC Premier League match data, monitors live event accuracy, and supports football performance analytics with reliable dataset updates.</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="exp-col-title">Education &amp; Certifications</div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <span class="tl-badge tl-badge-edu">Degree · Ongoing</span>
+          <div class="tl-title">Bachelor of Science in Data Science</div>
+          <div class="tl-org">Eastern Africa Statistical Training Center (EASTC)</div>
+          <div class="tl-period">2023 — Present · Dar es Salaam</div>
+          <div class="tl-desc">Core coursework covering statistics, programming, data analysis, machine learning, and data visualisation for real-world decision making.</div>
+        </div>
+        <div class="tl-item reveal reveal-delay-1">
+          <div class="tl-dot"></div>
+          <span class="tl-badge tl-badge-cert">Certificate</span>
+          <div class="tl-title">Data Science Fundamentals</div>
+          <div class="tl-org">IBM Cognitive Class · DS0101EN</div>
+          <div class="tl-period">2024</div>
+          <div class="tl-desc">Foundational data science concepts — tools, methods, and the full data science workflow from IBM's official learning platform.</div>
+          <a href="Certificate/IBM DS0101EN Certificate _ Cognitive Class (2).pdf" target="_blank" class="tl-link">View Certificate &#8594;</a>
+        </div>
+        <div class="tl-item reveal reveal-delay-2">
+          <div class="tl-dot"></div>
+          <span class="tl-badge tl-badge-cert">Certificate</span>
+          <div class="tl-title">Excel Certificate</div>
+          <div class="tl-org">Microsoft Excel Training</div>
+          <div class="tl-period">2024</div>
+          <div class="tl-desc">Spreadsheet skills — data organisation, formulas, and analysis for practical reporting and decision support.</div>
+          <a href="Certificate/Excel certificate.pdf" target="_blank" class="tl-link">View Certificate &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- DESIGN PROJECTS -->
+<section id="design-projects">
+  <div class="projects-intro">
+    <div>
+      <div class="section-label reveal">04 — Creative Work</div>
+      <h2 class="section-title reveal">Design<br>Projects</h2>
+    </div>
+    <p class="section-desc reveal" style="text-align:right;">Visuals that stop the scroll. Built in Adobe Photoshop with colors guided by each brand or event identity.</p>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="Projects/Welcome Mkuranga.png" alt="Welcome Mkuranga poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Event Poster · Photoshop</div>
+        <div class="project-title">Welcome Mkuranga</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="Projects/Macha&Koko.png" alt="Macha and Koko poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Brand Graphic · Photoshop</div>
+        <div class="project-title">Macha &amp; Koko</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-2">
+      <div class="project-thumb">
+        <img src="Projects/Idrisa.png" alt="Idrisa portrait design poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Portrait Design · Photoshop</div>
+        <div class="project-title">Idrisa - Portrait Edit</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-3">
+      <div class="project-thumb">
+        <img src="Projects/Jogging.png" alt="Jogging poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Fitness Poster · Photoshop</div>
+        <div class="project-title">Jogging</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb">
+        <img src="Projects/Kongole.png" alt="Kongole poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Celebration Poster · Photoshop</div>
+        <div class="project-title">Kongole</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal reveal-delay-1">
+      <div class="project-thumb">
+        <img src="Projects/November 17.png" alt="November 17 poster" />
+        <div class="project-overlay"><span>VIEW PROJECT</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-cat">Event Graphic · Photoshop</div>
+        <div class="project-title">November 17</div>
+        <button type="button" class="project-details-btn btn btn-outline">View Details</button>
+        <div class="project-details">
+          <div class="project-meta"><strong>Tools used:</strong> Adobe Photoshop.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">05 — Let's Work</div>
+  <div class="contact-grid">
+    <div class="contact-left">
+        <h2 class="contact-cta-title reveal">Ready to create something <em>unforgettable?</em></h2>
+        <p class="contact-body reveal">I'm currently open for internship opportunities and freelance design projects. Let's build something that makes people feel something.</p>
+        <div class="contact-cards-container">
+          <a class="contact-card reveal" href="mailto:mwitikeanuwary@gmail.com" aria-label="Send email to Anuwary">
+            <div class="cd-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="cd-content"><div class="cd-label">Email</div><div class="cd-value">mwitikeanuwary@gmail.com</div></div>
+          </a>
+          <a class="contact-card reveal" href="https://wa.me/255626008501" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat">
+            <div class="cd-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div class="cd-content"><div class="cd-label">WhatsApp</div><div class="cd-value">+255 626 008 501</div></div>
+          </a>
+          <a class="contact-card reveal" href="https://www.google.com/maps/search/?api=1&query=Dar+es+Salaam,+Tanzania" target="_blank" rel="noopener noreferrer" aria-label="View Location on Google Maps">
+            <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="cd-content"><div class="cd-label">Location</div><div class="cd-value">Dar es Salaam, Tanzania</div></div>
+          </a>
+        </div>
+        <div style="margin-top:32px;display:flex;gap:10px;" class="reveal">
+          <a href="https://www.linkedin.com/in/anuwary-mwitike-679288352" target="_blank" class="social-link" title="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/Anuwary2024" target="_blank" class="social-link" title="GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/thisiz_anuu?igsh=MW8xczNydGxoazdrcw==" target="_blank" class="social-link" title="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    <!-- Contact form REMOVED as requested -->
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">AM<span>.</span></div>
+  <div class="footer-copy">© 2026 Anuwary Mwitike — Data Analyst & Graphics Designer</div>
+  <div style="display:flex;gap:10px;">
+    <a href="https://github.com/Anuwary2024" target="_blank" class="social-link" title="GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/anuwary-mwitike-679288352" target="_blank" class="social-link" title="LinkedIn" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://www.instagram.com/thisiz_anuu?igsh=MW8xczNydGxoazdrcw==" target="_blank" class="social-link" title="Instagram" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
