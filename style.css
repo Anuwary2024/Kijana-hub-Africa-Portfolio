@@ -90,8 +90,8 @@ nav {
 #home {
   min-height:100vh;
   display:grid;grid-template-columns:1fr 1fr;
-  align-items:center;
-  padding:60px 60px 40px;
+  align-items:start;
+  padding:100px 60px 40px;
   position:relative;overflow:hidden;gap:60px;
 }
 .hero-bg {
@@ -398,7 +398,7 @@ footer { padding:40px 60px;border-top:1px solid var(--border);display:flex;justi
   nav { padding:10px 24px; }
   .nav-links { display:none; }
   .ham { display:flex; }
-  #home { grid-template-columns:1fr;padding:60px 24px 40px;gap:40px; }
+  #home { grid-template-columns:1fr;padding:85px 24px 40px;gap:40px; }
   .hero-right { order:-1; }
   .hero-photo-frame { max-width:280px;margin:0 auto; }
   section { padding:70px 24px; }
